@@ -10,3 +10,7 @@
 > 1. 제목 행에 명령문을 사용한다 
 > 1. 본문을 72자 단위로 개행한다 
 > 1. 어떻게 보다는 무엇과 왜를 설명한다
+
+##  Code conventions 
+
+> [Rayernderlich swift style guide](https://github.com/raywenderlich/swift-style-guide)
