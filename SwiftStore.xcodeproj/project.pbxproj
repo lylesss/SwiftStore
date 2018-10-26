@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB54AD840463CE3828C82C9D /* Pods_SwiftStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF3E34E7E61A52A05AC60B2 /* Pods_SwiftStore.framework */; };
 		CBAF3A7B2182E3460050EE39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3A7A2182E3460050EE39 /* AppDelegate.swift */; };
 		CBAF3A7D2182E3460050EE39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3A7C2182E3460050EE39 /* ViewController.swift */; };
 		CBAF3A802182E3460050EE39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAF3A7E2182E3460050EE39 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7FF3E34E7E61A52A05AC60B2 /* Pods_SwiftStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8699DF22DACA84266245BBB8 /* Pods-SwiftStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStore/Pods-SwiftStore.debug.xcconfig"; sourceTree = "<group>"; };
 		CBAF3A772182E3460050EE39 /* SwiftStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAF3A7A2182E3460050EE39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBAF3A7C2182E3460050EE39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		CBAF3A842182E3480050EE39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBAF3A872182E3480050EE39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBAF3A892182E3480050EE39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF8BC9502A0C6C0C01899A04 /* Pods-SwiftStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStore/Pods-SwiftStore.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB54AD840463CE3828C82C9D /* Pods_SwiftStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		576213D5A97EC917006DE04F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FF3E34E7E61A52A05AC60B2 /* Pods_SwiftStore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACEE3ACC63B6D98F0404B78C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8699DF22DACA84266245BBB8 /* Pods-SwiftStore.debug.xcconfig */,
+				EF8BC9502A0C6C0C01899A04 /* Pods-SwiftStore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CBAF3A6E2182E3460050EE39 = {
 			isa = PBXGroup;
 			children = (
 				CBAF3A792182E3460050EE39 /* SwiftStore */,
 				CBAF3A782182E3460050EE39 /* Products */,
+				ACEE3ACC63B6D98F0404B78C /* Pods */,
+				576213D5A97EC917006DE04F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBAF3A8C2182E3480050EE39 /* Build configuration list for PBXNativeTarget "SwiftStore" */;
 			buildPhases = (
+				6E40D149C48CE2379CE393F8 /* [CP] Check Pods Manifest.lock */,
 				CBAF3A732182E3460050EE39 /* Sources */,
 				CBAF3A742182E3460050EE39 /* Frameworks */,
 				CBAF3A752182E3460050EE39 /* Resources */,
@@ -132,6 +157,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E40D149C48CE2379CE393F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CBAF3A732182E3460050EE39 /* Sources */ = {
@@ -284,6 +330,7 @@
 		};
 		CBAF3A8D2182E3480050EE39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8699DF22DACA84266245BBB8 /* Pods-SwiftStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +349,7 @@
 		};
 		CBAF3A8E2182E3480050EE39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF8BC9502A0C6C0C01899A04 /* Pods-SwiftStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
